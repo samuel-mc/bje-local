@@ -65,7 +65,6 @@ html {
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 12px 0;
 }
 
 .header__nav ul li {
@@ -89,10 +88,6 @@ html {
 
 .header__image {
     text-align: center;
-}
-
-.header__image img {
-    height: 60px;
 }
 
 .header__idioma {
@@ -140,6 +135,19 @@ html {
 .dropdown-menu li {
     text-align: left;
     margin-bottom: 12px;
+}
+
+.handler-menu {
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+}
+
+.handler-menu svg {
+    fill: var(--white);
+    height: 24px;
 }
 
 /* ******************************
@@ -204,7 +212,6 @@ html {
 
 .container__header h2 {
     color: var(--white);
-    font-size: var(--xl);
     text-align: center;
 }
 
@@ -558,9 +565,32 @@ textarea {
         grid-row: 2;
     }
 
+    .header__image img {
+        height: 40px;
+        margin: 12px 0;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
     .header__nav ul {
-        justify-content: center;
-        text-align: center;
+        align-items: flex-start;
+        justify-content: left;
+        text-align: left;
+        flex-direction: column;
+    }
+    
+    .header__nav ul li {
+        margin: 12px 0;
+    }
+
+    #iconHamburguer {
+        display: block;
+    }
+
+    #iconCross {
+        display: none;
     }
 
     .link {
@@ -591,6 +621,14 @@ textarea {
         grid-row: 4/5;
         font-size: var(--md);
         padding: 16px;
+    }
+
+    .index-main .main__hero {
+        height: 60vh;
+    }
+
+    .container__header h2 {
+        font-size: var(--lg);
     }
 
     .responsive-container-r {
@@ -661,8 +699,27 @@ textarea {
         grid-row: auto;
     }
 
-    .header__nav ul {
-        justify-content: left;
+    .header__image img {
+        height: 60px;
+        margin: 12px 0;
+    }
+
+    .header__nav {
+        display: block;
+    }
+
+    .header__nav > ul {
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    #iconHamburguer {
+        display: none;
+    }
+
+    #iconCross {
+        display: none;
     }
 
     .link {
@@ -685,6 +742,15 @@ textarea {
 
     .modal__link {
         grid-row: 3/4;
+    }
+
+    .index-main .main__hero {
+        height: auto;
+    }
+
+
+    .container__header h2 {
+        font-size: var(--xl);
     }
 
     .responsive-container {
