@@ -573,6 +573,9 @@ textarea {
 
     .header__nav {
         display: none;
+        background-color: var(--dark-gray);
+        padding: 12px;
+        border-radius: 12px;
     }
 
     .header__nav ul {
@@ -653,7 +656,7 @@ textarea {
     }
 
     .servicios__info h1 {
-        font-size: var(--xl);
+        font-size: var(--lg);
         text-align: center;
     }
 
@@ -707,6 +710,9 @@ textarea {
 
     .header__nav {
         display: block;
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
     }
 
     .header__nav > ul {
