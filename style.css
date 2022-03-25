@@ -528,6 +528,7 @@ textarea {
 ******************************* */
 .main__title h2 {
     font-size: var(--xl);
+    margin: 64px 0;
 }
 
 .terminos {
